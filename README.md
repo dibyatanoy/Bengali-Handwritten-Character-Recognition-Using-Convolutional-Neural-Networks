@@ -10,7 +10,15 @@ A lot of the trouble with Bengali character recognition stems from the fact that
 
 ###Dataset
 
-The dataset was obtained online from the [CMATERdb](https://www.dropbox.com/s/55bhfr3ycvsewsi/CMATERdb%203.1.2.rar) pattern recognition database repository.
+The dataset was obtained online from the [CMATERdb](https://www.dropbox.com/s/55bhfr3ycvsewsi/CMATERdb%203.1.2.rar) pattern recognition database repository. It consists of a Train folder and a Test folder, containing 12,000 and 3,000 images respectively.
+
+###Pre-processing
+
+All the images were rescaled to standard dimensions of 50x50. The gray backgrounds in a lot of the images were replaced with white backgrounds, and then colors inverted (black to white, and white to black) to reduce computational cost. Finally, all images were converted into grayscale format.
+
+The training dataset was augmented by making 4 copies of each image with small random rotations (between -15 and 15 degrees) added in, and unwanted black corners fixed. The images in the train folder (about 60,000 after pre-processing, minus some very noisy images that I hand-picked and deleted) were divided into two: a train dataset and a validation dataset for hyper-parameter training.
+
+The final train datasets used had 50,000 images, while the validation dataset had 5000.
 
 ###Models Used
 
