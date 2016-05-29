@@ -6,7 +6,7 @@ Some facts about the Bengali language:
 - Bengali is the native language of Bangladesh, and is spoken by 300 million people worldwide, making it the seventh most spoken language in the world by total number of native speakers. 
 - The Bengali character set consists of 50 basic characters - 11 vowels and 39 consonants. - Characters can also be compounded to form many different combinations (~300). Here, I work with the recognition of the 50 basic characters only.
 
-A lot of the trouble with Bengali character recognition stems from the fact that there exist a number of character pairs that are almost identical, differing only by a dash or a dot (for instance, ড and ড়). Feature-extraction based methods have worked decently well, but only one such model, in the work of *Bhattacharya et al.* has exceeded the 90% recognition rate.
+A lot of the trouble with Bengali character recognition stems from the fact that there exist a number of character pairs that are almost identical, differing only by a dash or a dot (for instance, ড and ড়). Feature-extraction based methods have worked decently well, but only one such model, in the work of *Bhattacharya et al. (2012)* has exceeded the 90% recognition rate.
 
 ###Dataset
 
