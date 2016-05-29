@@ -24,6 +24,6 @@ I have included the python code for each model, together with the actual iPython
 
 ###Results
 
-The best result was obtained using the final network architecture which includes an inception module. The test set accuracy was at 94.2% and training set accuracy at 98.9%.
+The best result was obtained using the final network architecture which includes an inception module. The test set accuracy was at **94.2%** and training set accuracy at **98.9%**.
 
-![alt text](https://github.com/dibyatanoy/Bengali-Handwritten-Character-Recognition-Using-Convolutional-Neural-Networks/blob/master/result_screenshots/Conv_nets_inception.png “Screenshot of the results from Inception CNN”)
+![alt text](https://github.com/dibyatanoy/Bengali-Handwritten-Character-Recognition-Using-Convolutional-Neural-Networks/blob/master/result_screenshots/Conv_nets_inception.png)
