@@ -18,7 +18,7 @@ All the images were rescaled to standard dimensions of 50x50. The gray backgroun
 
 The training dataset was augmented by making 4 copies of each image with small random rotations (between -15 and 15 degrees) added in, and unwanted black corners fixed. The images in the train folder (about 60,000 after pre-processing, minus some very noisy images that I hand-picked and deleted) were divided into two: a train dataset and a validation dataset for hyper-parameter training.
 
-The final train datasets used had 50,000 images, while the validation dataset had 5000.
+The final train datasets used had 50,000 images (1000 images per class, for 50 classes), while the validation dataset had 5000.
 
 ###Models Used
 
