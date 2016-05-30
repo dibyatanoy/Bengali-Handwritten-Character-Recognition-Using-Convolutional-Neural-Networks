@@ -22,7 +22,7 @@ The training dataset was augmented by making 4 copies of each image with small r
 The final train datasets used had 50,000 images (1000 images per class, for 50 classes), while the validation dataset had 5000. A sample of the images after processing is shown:
 
 
-<img align=“center” src=“https://github.com/dibyatanoy/Bengali-Handwritten-Character-Recognition-Using-Convolutional-Neural-Networks/blob/master/result_screenshots/processed_sample.png” />
+![Sample images](https://github.com/dibyatanoy/Bengali-Handwritten-Character-Recognition-Using-Convolutional-Neural-Networks/blob/master/result_screenshots/processed_sample.png)
 
 
 ###Models Used
