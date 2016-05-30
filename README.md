@@ -4,7 +4,8 @@ Handwritten character recognition is an old problem that has been extensively st
 Some facts about the Bengali language:
 
 - Bengali is the native language of Bangladesh, and is spoken by 300 million people worldwide, making it the seventh most spoken language in the world by total number of native speakers. 
-- The Bengali character set consists of 50 basic characters - 11 vowels and 39 consonants. - Characters can also be compounded to form many different combinations (~300). Here, I work with the recognition of the 50 basic characters only.
+- The Bengali character set consists of 50 basic characters - 11 vowels and 39 consonants.
+- Characters can also be compounded to form many different combinations (~300). Here, I work with the recognition of the 50 basic characters only.
 
 A lot of the trouble with Bengali character recognition stems from the fact that there exist a number of character pairs that are almost identical, differing only by a dash or a dot (for instance, ড and ড়). Feature-extraction based methods have worked decently well, but only one such model, in the work of *Bhattacharya et al. (2012)* has exceeded the 90% recognition rate.
 
@@ -18,7 +19,11 @@ All the images were rescaled to standard dimensions of 50x50. The gray backgroun
 
 The training dataset was augmented by making 4 copies of each image with small random rotations (between -15 and 15 degrees) added in, and unwanted black corners fixed. The images in the train folder (about 60,000 after pre-processing, minus some very noisy images that I hand-picked and deleted) were divided into two: a train dataset and a validation dataset for hyper-parameter training.
 
-The final train datasets used had 50,000 images (1000 images per class, for 50 classes), while the validation dataset had 5000.
+The final train datasets used had 50,000 images (1000 images per class, for 50 classes), while the validation dataset had 5000. A sample of the images after processing is shown:
+
+
+		![processed-images](https://github.com/dibyatanoy/Bengali-Handwritten-Character-Recognition-Using-Convolutional-Neural-Networks/blob/master/result_screenshots/processed_sample.png)
+
 
 ###Models Used
 
